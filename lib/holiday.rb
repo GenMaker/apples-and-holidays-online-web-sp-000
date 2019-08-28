@@ -65,42 +65,14 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.collect do |season, holiday_values|
-    #binding.pry
-    #when on season key
-      #if season
-        #upcase and transform to string
-          #upcase_season = season.to_s.capitalize!
-          puts"#{season.capitalize}:"
-          holiday_values.collect do |name, supplies|
             #binding.pry
-            puts name.to_s.split("_").map{|word| word.capitalize}.join (" ")
+            puts {name.to_s.split("_").map{|word| word.capitalize}.join (" ")
           supplies.collect do |item|
             puts item.to_s.split("_").map{|word|word.capitalize.join (" ")
-
-          #end
-        #return transformed string
-          #puts  "#{upcase_season}:"
-      #   if holiday_values == :new_years
-      #     # turn in to a string
-      #     two_word_holiday= holiday_name.to_s
-      #     #split the string,
-      #     two_word_holiday.split (" ")
-      #     #capitalize both words
-      #     two_word_holiday.capitalize!
-      #     #join back together
-      #     two_word_hoiday.join
-      #
-      #     else
-      #       # upcase  and transform to string
-      #       holiday_name= holiday_values.to_s.capitalize!
-      #       #return transformed string
-      #       "#{holiday_values}:"
-      #   end
-      end
-
+  end
 end
 
-# def all_holidays_with_bbq(holiday_hash)
-#   # return an array of holiday names (as symbols) where supply lists
-#   # include the string "BBQ"
-# end
+def all_holidays_with_bbq(holiday_hash)
+  # return an array of holiday names (as symbols) where supply lists
+  # include the string "BBQ"
+end
