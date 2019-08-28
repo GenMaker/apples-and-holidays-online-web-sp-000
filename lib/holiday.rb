@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
           holiday_values.collect do |name, supplies|
             #binding.pry
             final_holiday = name.to_s.split("_").map{|word| word.capitalize}.join (" ")
-            final_supplies =supplies.to_s.split(" ").map{|word| word.capitalize}.join (" ")
+            final_supplies =supplies.join (" ")
             puts final_holiday
           end
 
