@@ -65,12 +65,15 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.collect do |season, holiday_values|
-    binding.pry
+    #binding.pry
     #when on season key
-      if season
+      #if season
         #upcase and transform to string
           #upcase_season = season.to_s.capitalize!
           puts"#{season.capitalize}:"
+          holiday_values.collect do |name, supplies|
+            binding.pry
+          end
         #return transformed string
           #puts  "#{upcase_season}:"
       #   if holiday_values == :new_years
