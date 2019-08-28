@@ -75,7 +75,7 @@ def all_supplies_in_holidays(holiday_hash)
             #binding.pry
             puts name.to_s.split("_").map{|word| word.capitalize}.join (" ")
           supplies.collect do |item|
-            puts item.to_s.split("_").map{|word|word.capitalize.join (" ")   
+            puts item.to_s.split("_").map{|word|word.capitalize.join (" ")
           end
           end
         #return transformed string
@@ -97,11 +97,10 @@ def all_supplies_in_holidays(holiday_hash)
       #       "#{holiday_values}:"
       #   end
       # end
-  end
+
 end
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-
 end
