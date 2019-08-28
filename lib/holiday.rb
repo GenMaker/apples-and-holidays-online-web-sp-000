@@ -65,12 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.collect do |season, holiday_values|
-    #binding.pry
-    #when on season key
-      #if season
-        #upcase and transform to string
-          #upcase_season = season.to_s.capitalize!
-          puts"#{season.capitalize}:"
+          final_holiday= "#{season.capitalize}:"
           holiday_values.collect do |name, supplies|
             #binding.pry
             final_holiday = name.to_s.split("_").map{|word| word.capitalize}.join (" ")
