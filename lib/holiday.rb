@@ -96,7 +96,7 @@ def all_supplies_in_holidays(holiday_hash)
       #       #return transformed string
       #       "#{holiday_values}:"
       #   end
-      # end
+      end
 
 end
 
