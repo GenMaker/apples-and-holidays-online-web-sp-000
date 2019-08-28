@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
             #binding.pry
             final_holiday = holiday.to_s.split("_").map{|word| word.capitalize}.join (" ")
             final_supplies =supplies.join (", ")
-          puts " #{final_holiday}: #{final_supplies}"
+          puts "  #{final_holiday}: #{final_supplies}"
           end
 
   end
