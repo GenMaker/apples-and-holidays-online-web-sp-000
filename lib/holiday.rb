@@ -76,7 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
             puts name.to_s.split("_").map{|word| word.capitalize}.join (" ")
           supplies.collect do |item|
             puts item.to_s.split("_").map{|word|word.capitalize.join (" ")   
-
+          end
           end
         #return transformed string
           #puts  "#{upcase_season}:"
