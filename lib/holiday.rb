@@ -73,23 +73,23 @@ def all_supplies_in_holidays(holiday_hash)
           puts"#{season.capitalize}:"
         #return transformed string
           #puts  "#{upcase_season}:"
-        if holiday_values == :new_years
-          # turn in to a string
-          two_word_holiday= holiday_name.to_s
-          #split the string,
-          two_word_holiday.split (" ")
-          #capitalize both words
-          two_word_holiday.capitalize!
-          #join back together
-          two_word_hoiday.join
-
-          else
-            # upcase  and transform to string
-            holiday_name= holiday_values.to_s.capitalize!
-            #return transformed string
-            "#{holiday_values}:"
-        end
-      end
+      #   if holiday_values == :new_years
+      #     # turn in to a string
+      #     two_word_holiday= holiday_name.to_s
+      #     #split the string,
+      #     two_word_holiday.split (" ")
+      #     #capitalize both words
+      #     two_word_holiday.capitalize!
+      #     #join back together
+      #     two_word_hoiday.join
+      #
+      #     else
+      #       # upcase  and transform to string
+      #       holiday_name= holiday_values.to_s.capitalize!
+      #       #return transformed string
+      #       "#{holiday_values}:"
+      #   end
+      # end
   end
 end
 
