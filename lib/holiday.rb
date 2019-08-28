@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
         #upcase and transform to string
         upcase_season = season.to_s.capitalize!
         #return transformed string
-        "#{upcase_season}:"
+      puts  "#{upcase_season}:"
         if holiday_values == :new_years
           # turn in to a string
           two_word_holiday= holiday_name.to_s
