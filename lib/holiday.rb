@@ -72,12 +72,11 @@ def all_supplies_in_holidays(holiday_hash)
           #upcase_season = season.to_s.capitalize!
           puts"#{season.capitalize}:"
           holiday_values.collect do |name, supplies|
-            #binding.pry
+            binding.pry
             puts name.to_s.split("_").map{|word| word.capitalize}.join (" ")
-          supplies.collect do |item|
-            puts item.to_s.split("_").map{|word|word.capitalize.join (" ")
+            puts supplies.to_s.split(" ").map{|word| word.capitalize}.join (" ")
 
-          #end
+          end
         #return transformed string
           #puts  "#{upcase_season}:"
       #   if holiday_values == :new_years
@@ -96,11 +95,12 @@ def all_supplies_in_holidays(holiday_hash)
       #       #return transformed string
       #       "#{holiday_values}:"
       #   end
-      end
-
+      # end
+  end
 end
 
-# def all_holidays_with_bbq(holiday_hash)
-#   # return an array of holiday names (as symbols) where supply lists
-#   # include the string "BBQ"
-# end
+def all_holidays_with_bbq(holiday_hash)
+  # return an array of holiday names (as symbols) where supply lists
+  # include the string "BBQ"
+
+end
