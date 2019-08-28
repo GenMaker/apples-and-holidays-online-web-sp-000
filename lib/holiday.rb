@@ -73,8 +73,8 @@ def all_supplies_in_holidays(holiday_hash)
           puts"#{season.capitalize}:"
           holiday_values.collect do |name, supplies|
             binding.pry
-            puts (name.to_s.split("_").map{|word| word.capitalize}.join (" ")
-            + supplies.to_s.split(" ").map{|word| word.capitalize}.join (" "))
+            puts (name.to_s.split("_").map{|word| word.capitalize}.join (" "))+
+                  (supplies.to_s.split(" ").map{|word| word.capitalize}.join (" "))
 
           end
         #return transformed string
