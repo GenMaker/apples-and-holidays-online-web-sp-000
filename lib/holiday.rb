@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
           holiday_values.collect do |name, supplies|
             #binding.pry
             name.to_s.split("_").map{|word| word.capitalize}.join (" ")
-            supplies.to_s.collect{|word| word.capitalize}
+            supplies.to_s.capitalize
           end
         #return transformed string
           #puts  "#{upcase_season}:"
